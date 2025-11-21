@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //var 키워드로 변수 선언
+    var name = "Alice"; //변수명 name 선언 후 Alice 할당
+    name = "Olivia"; //name Olivia 재할당
+    var name = "Sophia"; //변수 name에 Sophia 재선언
+    console.log(name); //콘솔 창에서 Sophia 출력
+
+    //let 키워드로 변수 선언
+    let age = 25; //변수명 age로 선언 후 25 할당
+    age = 30; //age에 30 재할당
+    console.log(age); //콘솔 창에서 30 출력
+
+    //const 키워드로 상수 선언
+    const country = "SouthKorea"; //상수명 country 선언 후 SouthKorea 할당
+    console.log(country); //콘솔 창에서 SouthKorea 출력
+
+    let a = 5; //a 변수 선언 후 숫자 5 할당
+    let b = 10; //b 변수 선언 후 숫자 10 할당
+    let c = 10; //c 변수 선언 후 숫자 10 할당
+    let result; //result 변수 선언 생성
+
+    //산술 연산자
+    result = a + b; //더하기
+    document.write(result + "<br>"); //15
+    
+    //증감 연산자
+    a++; //1씩 증가
+    document.write(a + "<br>"); //6 a의 값이  6으로 바뀜
+
+    //복합 대입 연산자
+    a+=b; // a = a + b //a의 값6(위에서 값이 내려옴)
+    document.write(a + "<br>"); //16
+
+    //비교 연산자
+    result = a > b; //16 > 10 //a의 값 16(위에서 값이 내려옴)
+    document.write(result + "<br>");//true
+
+    //논리 연산자
+    result = a>b && b == c; //16>10 && 10 == 10 -> &&연산자는 두 조건을 만족시키면 true
+    document.write(result + "<br>"); //true
+
+    //문자형 데이터 결합
+    let firstName = "민";
+    let lastName = "세현";
+    let fullName = firstName + " " + lastName; //문자형데이터 + "공백" + 문자형데이터
+    document.write(fullName + "<br>");
+
+    //문자형 + 숫자형 데이터 결합
+    let Age = 22;
+    document.write(fullName + " 나이는 " + Age + " 입니다. " + "<br>");
+
+    //변수 num에 숫자 5 할당
+    let num = 5;
+
+    if (num % 2 == 0) {
+      //num을 2로 나누었을 때 나머지가 0이면 True
+      alert("짝수");//'짝수'로 출력
+    } else {
+      //0이 아니면 false
+      alert("홀수");//'홀수'로 출력
+    }
+
+    //while문
+    let count = 1;//초깃 값 설정
+    while(count <= 5){//조건식이 참이면 {...}실행. 거짓이면 끝
+      document.write("hello" + count + "<br>");//"hello"와 변수가 결합되어 출력
+      count++;//conut 값을 1 증가
+      }
+
+    //for문
+    for(count=1; count <=5; count++){
+      document.write("hello" + count);//"hello"와 변수가 결합되어 출력
+    }
+
+    //함수구문
+    function writeFunction(){
+      document.write("<br>안녕하세요!");
+    }
+    writeFunction();//함수 호출
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

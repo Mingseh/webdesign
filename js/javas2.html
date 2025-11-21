@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">빨간색</h1>
+  <!-- 태그를 꾸미는 script작업 시 태그 아래쪽에 작성해야한다 -->
+   <script>
+    //window객체 메서드
+    window.alert("경고창");//경고창 출력
+
+    //document객체 메서드
+    document.write(screen.width);//screen객체 width 속성 출력
+
+    //#title스타일 속성 중 color의 값을 red로 설정
+    document.getElementById("title").style.color="red";
+
+    let i = 0;
+
+    function count(){
+      i++;
+      document.write("hello" + i);
+    }
+
+    function first(){
+      i++;
+      document.write("<h1>" + "bye" + "</h1>");
+    }
+
+    setTimeout(first, 1000); //1초에 first함수 한번만 실행
+    setInterval(count, 500); //0.5초마다 count함수 실행
+   </script>
+</body>
+</html>
